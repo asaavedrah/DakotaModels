@@ -1,0 +1,26 @@
+<!-- begin #header -->
+<div  id="header" class="header navbar-default" >
+ 
+  <!-- begin navbar-header -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle pull-left" *ngIf="this.pageSidebarTwo" (click)="mobileRightSidebarToggle()">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="javascript:;" class="navbar-brand"><img [src]="logo" width="150px"> </a>
+    
+  </div>
+  <!-- end navbar-header -->
+
+
+  <!-- begin header-nav -->
+  <ul class="navbar-nav navbar-right mr-5">
+    <li>
+      <a href="javascript:;" > <i class="fa fa-home"></i>  Inicio</a>
+    </li>
+    <li>
+      <a href="javascript:;" > <i class="fa fa-shopping-bag"></i>  Productos</a>
+    </li>
+  </ul>
+</div>

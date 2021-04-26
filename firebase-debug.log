@@ -1,0 +1,204 @@
+[debug] [2021-04-25T23:01:48.594Z] ----------------------------------------------------------------------
+[debug] [2021-04-25T23:01:48.596Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-25T23:01:48.596Z] CLI Version:   9.10.0
+[debug] [2021-04-25T23:01:48.596Z] Platform:      win32
+[debug] [2021-04-25T23:01:48.597Z] Node Version:  v14.15.1
+[debug] [2021-04-25T23:01:48.598Z] Time:          Sun Apr 25 2021 19:01:48 GMT-0400 (hora estándar de Chile)
+[debug] [2021-04-25T23:01:48.598Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-25T23:01:48.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-25T23:01:48.604Z] > authorizing via signed-in user (saavedra.alexis26@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DTI_UCH\Desktop\template_angularjs10
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-04-25T23:02:00.223Z] > refreshing access token with scopes: []
+[debug] [2021-04-25T23:02:00.224Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T23:02:00.302Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 25 Apr 2021 23:02:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T23:02:00.316Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-04-25T23:02:01.326Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-04-25T23:02:01.327Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project dakotamodels (DakotaModels) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-04-25T23:02:02.574Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-25T23:02:02.574Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T23:02:02.625Z] <<< HTTP RESPONSE 200 {"date":"Sun, 25 Apr 2021 23:02:03 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T23:02:02.651Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/dakotamodels/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-25T23:02:03.672Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 23:02:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-04-25T23:02:03.674Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/dakotamodels/locations/-/instances/dakotamodels-default-rtdb  
+ 
+[debug] [2021-04-25T23:02:04.703Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 23:02:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-04-25T23:02:12.918Z] >>> HTTP REQUEST GET https://dakotamodels-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-04-25T23:02:13.554Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sun, 25 Apr 2021 23:02:13 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2021-04-25T23:02:13.556Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\DTI_UCH\Desktop\template_angularjs10\y'
+    at Object.openSync (fs.js:476:3)
+    at Object.writeFileSync (fs.js:1467:35)
+    at Config.writeProjectFile (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:156:8)
+    at writeDBRules (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:27:12)
+    at Object.doSetup [as database] (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:113:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async init (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-04-25T23:02:24.392Z] ----------------------------------------------------------------------
+[debug] [2021-04-25T23:02:24.394Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-25T23:02:24.395Z] CLI Version:   9.10.0
+[debug] [2021-04-25T23:02:24.395Z] Platform:      win32
+[debug] [2021-04-25T23:02:24.395Z] Node Version:  v14.15.1
+[debug] [2021-04-25T23:02:24.396Z] Time:          Sun Apr 25 2021 19:02:24 GMT-0400 (hora estándar de Chile)
+[debug] [2021-04-25T23:02:24.396Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-25T23:02:24.403Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-25T23:02:24.403Z] > authorizing via signed-in user (saavedra.alexis26@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DTI_UCH\Desktop\template_angularjs10
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-04-25T23:02:32.764Z] > refreshing access token with scopes: []
+[debug] [2021-04-25T23:02:32.764Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T23:02:32.866Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 25 Apr 2021 23:02:33 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T23:02:32.878Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-04-25T23:02:33.948Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-04-25T23:02:33.949Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project dakotamodels (DakotaModels) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-04-25T23:02:35.278Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-25T23:02:35.278Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T23:02:35.353Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 25 Apr 2021 23:02:35 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T23:02:35.364Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/dakotamodels/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-25T23:02:36.410Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 23:02:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-04-25T23:02:36.412Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/dakotamodels/locations/-/instances/dakotamodels-default-rtdb  
+ 
+[debug] [2021-04-25T23:02:37.431Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 23:02:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-04-25T23:08:47.836Z] >>> HTTP REQUEST GET https://dakotamodels-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-04-25T23:08:48.413Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sun, 25 Apr 2021 23:08:48 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2021-04-25T23:08:48.415Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\DTI_UCH\Desktop\template_angularjs10\y'
+    at Object.openSync (fs.js:476:3)
+    at Object.writeFileSync (fs.js:1467:35)
+    at Config.writeProjectFile (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:156:8)
+    at writeDBRules (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:27:12)
+    at Object.doSetup [as database] (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:113:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async init (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-04-25T23:08:55.715Z] ----------------------------------------------------------------------
+[debug] [2021-04-25T23:08:55.717Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-25T23:08:55.718Z] CLI Version:   9.10.0
+[debug] [2021-04-25T23:08:55.718Z] Platform:      win32
+[debug] [2021-04-25T23:08:55.718Z] Node Version:  v14.15.1
+[debug] [2021-04-25T23:08:55.719Z] Time:          Sun Apr 25 2021 19:08:55 GMT-0400 (hora estándar de Chile)
+[debug] [2021-04-25T23:08:55.719Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-25T23:08:55.725Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-25T23:08:55.725Z] > authorizing via signed-in user (saavedra.alexis26@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DTI_UCH\Desktop\template_angularjs10
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-04-25T23:09:14.407Z] > refreshing access token with scopes: []
+[debug] [2021-04-25T23:09:14.408Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T23:09:14.791Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 25 Apr 2021 23:09:15 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T23:09:14.805Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-04-25T23:09:15.896Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-04-25T23:09:15.897Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project dakotamodels (DakotaModels) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-04-25T23:09:16.828Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-25T23:09:16.829Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-25T23:09:16.885Z] <<< HTTP RESPONSE 200 {"date":"Sun, 25 Apr 2021 23:09:17 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-25T23:09:16.895Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/dakotamodels/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-25T23:09:17.994Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 23:09:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-04-25T23:09:17.996Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/dakotamodels/locations/-/instances/dakotamodels-default-rtdb  
+ 
+[debug] [2021-04-25T23:09:19.031Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 25 Apr 2021 23:09:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-04-25T23:09:21.198Z] >>> HTTP REQUEST GET https://dakotamodels-default-rtdb.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-04-25T23:09:21.832Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sun, 25 Apr 2021 23:09:22 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2021-04-25T23:09:21.835Z] Error: EISDIR: illegal operation on a directory, open 'C:\Users\DTI_UCH\Desktop\template_angularjs10\y'
+    at Object.openSync (fs.js:476:3)
+    at Object.writeFileSync (fs.js:1467:35)
+    at Config.writeProjectFile (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:156:8)
+    at writeDBRules (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:27:12)
+    at Object.doSetup [as database] (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:113:13)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async init (C:\Users\DTI_UCH\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
